@@ -27,8 +27,10 @@ const Nav = () => {
     <StyledNav variants={fadeIn} initial="hidden" animate="show">
       <Logo onClick={clearSearched}>
         <img src={logo} alt="logo" />
-        <h1>Ignite</h1>
-      </Logo>
+        </Logo>
+        <div>
+        <h1>KnowYourGames</h1>
+        </div>
       <form className="search">
         <input value={textInput} onChange={inputHandler} type="text" />
         <button onClick={submitSearch} type="submit">
@@ -55,7 +57,7 @@ const StyledNav = styled(motion.nav)`
     border: none;
     padding: 0.5rem 2rem;
     cursor: pointer;
-    background: #ff7676;
+    background: grey;
     color: white;
   }
 `;
