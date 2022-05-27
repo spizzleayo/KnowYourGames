@@ -1,7 +1,7 @@
 //MEdia resize
 
 
- const smallImage = (imagePath, size) => {
+export const smallImage = (imagePath, size) => {
   const image = imagePath.match(/media\/screenshots/)
   ? imagePath.replace(
     "media/screenshots",
